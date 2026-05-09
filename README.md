@@ -1,6 +1,7 @@
-## GitHub Page
+## GitHub
 
-- (https://codingspencer.github.io/wdd331-practice/)
+- [Page](https://codingspencer.github.io/wdd331-practice/)
+- [Repo](https://github.com/CodingSpencer/wdd331-practice.git)
 
 ## Pages
 
