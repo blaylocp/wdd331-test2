@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: #0b0b10; /* deep near-black with slight purple tint */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* headings */
+h2 {
+    color: #e6e6f0;
+    margin-top: 2rem;
+}
+
+/* NAV CONTAINER */
+@scope (nav) {
+    & {
+        background-color: tan; /* deep indigo (works with purple links) */
+        padding: 1.5rem;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 2rem auto;
+        border: 1px solid #2a2a44;
+    }
+
+    /* unvisited links */
+    nav a:link {
+        color: #f2c14e; /* warm muted gold (not neon yellow) */
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* visited links (PURPLE - embraced, not fought) */
+    nav a:visited {
+        color: #a78bfa; /* soft lavender purple */
+    }
+
+    /* hover */
+    nav a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    /* active click */
+    nav a:active {
+        color: #f2c14e;
+    }
+}
