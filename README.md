@@ -1,6 +1,6 @@
 ## GitHub Page
 
-- (https://codingspencer.github.io/WDD331R_SpencerA_Practice_Site/)
+- (https://codingspencer.github.io/wdd331-practice/)
 
 ## Pages
 
