@@ -1,46 +1,20 @@
-body {
-    margin: 0;
-    background-color: #0b0b10; /* deep near-black with slight purple tint */
-    font-family: 'Times New Roman', Times, serif;
-}
+@layer base, layout, components, utilities, vendor;
 
-/* headings */
-h2 {
-    color: #e6e6f0;
-    margin-top: 2rem;
-}
+/* BASE */
+@import "base/elements.css" layer(base);
+@import "base/reset.css" layer(base);
 
-/* NAV CONTAINER */
-@scope (nav) {
-    & {
-        background-color: tan; /* deep indigo (works with purple links) */
-        padding: 1.5rem;
-        border-radius: 10px;
-        max-width: 600px;
-        margin: 2rem auto;
-        border: 1px solid #2a2a44;
-    }
+/* LAYOUT */
 
-    /* unvisited links */
-    nav a:link {
-        color: #f2c14e; /* warm muted gold (not neon yellow) */
-        text-decoration: none;
-        font-weight: 600;
-    }
+/* COMPONENTS */
+@import "components/nav.css" layer(components);
 
-    /* visited links (PURPLE - embraced, not fought) */
-    nav a:visited {
-        color: #a78bfa; /* soft lavender purple */
-    }
+/* TOKENS */
+@import "tokens/colors.css" layer(tokens);
+@import "tokens/variables.css" layer(tokens);
 
-    /* hover */
-    nav a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-    }
+/* UTILITIES */
+@import "utilities/utilities.css" layer(utilities);
 
-    /* active click */
-    nav a:active {
-        color: #f2c14e;
-    }
-}
+/* VENDOR */
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css") layer(framework); */
