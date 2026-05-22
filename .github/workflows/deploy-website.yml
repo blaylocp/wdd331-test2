@@ -30,6 +30,9 @@ jobs:
       - name: Build CSS
         run: npm run build
 
+      - name: Verify build
+        run: ls -R
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
