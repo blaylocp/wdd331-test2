@@ -33,5 +33,4 @@ jobs:
           folder: .
           branch: website
           clean: true
-          clean_exclude:
-            - dist
+          clean_exclude: dist
