@@ -24,14 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create dist
-        run: mkdir -p dist
-
       - name: Build CSS
         run: npm run build
-
-      - name: Verify build
-        run: ls -R
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
@@ -39,3 +33,5 @@ jobs:
           folder: .
           branch: website
           clean: true
+          clean_exclude:
+            - dist
